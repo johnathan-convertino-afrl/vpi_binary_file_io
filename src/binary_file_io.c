@@ -46,8 +46,6 @@ PLI_INT32 binary_end_compile_cb(p_cb_data data)
     vpi_printf("ERROR: %s could not create ringbuffer\n", vpi_get_str(vpiName, ps_process_data->systf_handle));
     
     vpi_control(vpiFinish, 1);
-    
-    return 0;
   }
   
   return 0;
@@ -154,7 +152,6 @@ PLI_INT32 binary_compiletf(PLI_BYTE8 *user_data)
   
   arg_type = vpi_get(vpiType, arg2_handle);
 
-  if(arg_type != vpiReg)
   switch(arg_type)
   {
     case vpiNet:
