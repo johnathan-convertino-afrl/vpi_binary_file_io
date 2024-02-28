@@ -129,6 +129,17 @@ PLI_INT32 binary_compiletf(PLI_BYTE8 *user_data)
   
   // check the type of the first handle, if it doesn't match, quit.
   arg1_handle = vpi_scan(arg_iterate);
+
+  if(!arg1_handle)
+  {
+    vpi_printf("ERROR: %s requires two arguments.\n", p_func_name);
+
+    vpi_free_object(arg_iterate);
+
+    vpi_control(vpiFinish, 1);
+
+    return 0;
+  }
   
   arg_type = vpi_get(vpiConstType, arg1_handle);
   
@@ -149,6 +160,17 @@ PLI_INT32 binary_compiletf(PLI_BYTE8 *user_data)
 
   // check for a second argument, this should return a vector.
   arg2_handle = vpi_scan(arg_iterate);
+
+  if(!arg2_handle)
+  {
+    vpi_printf("ERROR: %s requires two arguments.\n", p_func_name);
+
+    vpi_free_object(arg_iterate);
+
+    vpi_control(vpiFinish, 1);
+
+    return 0;
+  }
   
   arg_type = vpi_get(vpiType, arg2_handle);
 
