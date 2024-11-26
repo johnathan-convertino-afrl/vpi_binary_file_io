@@ -39,51 +39,17 @@ returns the number of bytes read or writen. Z or X place in the vector indicates
 bytes not available for read, or do not write these bytes for write. The read funciton
 will return a negative number of bytes when the end of file is reached.
 
-You can use the following for including the library in your project:
+You can use the following to include the library in your project:
 
 \begin{lstlisting}[language=XML]
-src :
-  files :
-    - src/read_binary_file.c  : {file_type : cSource}
-    - src/write_binary_file.c : {file_type : cSource}
-    - src/binary_file_io.c    : {file_type : cSource}
-    - src/binary_file_io.h    : {file_type : cSource, is_include_file : true}
-    - src/read_binary_file.h  : {file_type : cSource, is_include_file : true}
-    - src/write_binary_file.h : {file_type : cSource, is_include_file : true}
-    - src/binary_file_io.sft  : {file_type : user}
-
-lib :
-  files :
-    - lib_ringbuffer/build/libringBuffer.a : {file_type : user, copyto : .}
-
-header :
-  files :
-    - lib_ringbuffer/ringBuffer.h : {file_type : cSource, is_include_file : true}
-
-vpi:
-  bin_file_io_vpi:
-    filesets : [src, header]
-    libs : [ringBuffer -L., pthread]
-
-generate:
-  gen_git:
-    generator: git_pull
-    parameters:
-      repo_url: https://github.com/sparkletron/C89_pthread_ring_buffer.git
-      repo_dir: lib_ringbuffer
-      tag: release_v1.6.1
-  gen_lib:
-    generator: gen_cmake
-    parameters:
-      src_dir:  lib_ringbuffer
-      cmake_args: ["-DCMAKE_POSITION_INDEPENDENT_CODE=ON"]
+dep_vpi:
+  depend:
+    - AFRL:vpi:binary_file_io:1.0.0
 
 targets:
   default: &default
-    description: Intergration default target for simulations.
-    filesets: [lib, dep_gen]
-    generate: [gen_git, gen_lib]
-    vpi: [bin_file_io_vpi]
+    description: Default file set.
+    filesets: [src, dep, dep_vpi]
 \end{lstlisting}
 
 \subsection{Dependencies}
