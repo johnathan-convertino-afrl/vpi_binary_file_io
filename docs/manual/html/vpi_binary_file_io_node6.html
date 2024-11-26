@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2021.2 (Released July 1, 2021) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Architecture</TITLE>
+<META NAME="description" CONTENT="Architecture">
+<META NAME="keywords" CONTENT="html">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2021.2">
+
+<LINK REL="STYLESHEET" HREF="html.css">
+
+<LINK REL="next" HREF="vpi_binary_file_io_node7.html">
+<LINK REL="previous" HREF="vpi_binary_file_io_node2.html">
+<LINK REL="next" HREF="vpi_binary_file_io_node7.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="vpi_binary_file_io_node7.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="html.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="vpi_binary_file_io_node5.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html44"
+  HREF="vpi_binary_file_io_node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="vpi_binary_file_io_node7.html">Building</A>
+<B> Up:</B> <A
+ HREF="html.html">html</A>
+<B> Previous:</B> <A
+ HREF="vpi_binary_file_io_node5.html">fusesoc_info Depenecies</A>
+ &nbsp; <B>  <A ID="tex2html45"
+  HREF="vpi_binary_file_io_node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H1><A ID="SECTION00030000000000000000">
+Architecture</A>
+</H1>
+
+<P>
+This VPI library provides two functions for the user to use during simulation, read_binary_file and write_binary_file. These will read and
+write from binary files. These functions use ringbuffers and multithreading to seperate file I/O from the simulation so file access will not
+slow down the simulation.
+
+<P>
+The read_binary_file will read any binary file till it runs out of data. When it does, if it can not complete the word (one byte left, for say a 4 byte word output)
+then the unused bytes for the aval/bval pairs are set to Z. Meaning in the simulation they will show up as Z, not 0 or 1. It will also assert the EOF (end of file) signal
+from the core showing that this is the last of the data.
+
+<P>
+The write_binary_file will write any binary data till it is given that is a 0 or a 1. Any bytes that contain a Z will not be written to the output file. This allows for
+any file that is read to be written in a one to one manner.
+
+<P>
+Please see <A HREF="vpi_binary_file_io_node15.html#Module_Documentation"><IMG  ALT="[*]" SRC="crossref.png"></A> for more information per target.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

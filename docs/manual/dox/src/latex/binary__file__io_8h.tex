@@ -1,0 +1,131 @@
+\hypertarget{binary__file__io_8h}{}\doxysection{binary\+\_\+file\+\_\+io.\+h File Reference}
+\label{binary__file__io_8h}\index{binary\_file\_io.h@{binary\_file\_io.h}}
+
+
+Functions to write raw binary files properly in verilog.  
+
+
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$pthread.\+h$>$}\newline
+{\ttfamily \#include $<$vpi\+\_\+user.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}ring\+Buffer.\+h\char`\"{}}\newline
+Include dependency graph for binary\+\_\+file\+\_\+io.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binary__file__io_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binary__file__io_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs__process__data}{s\+\_\+process\+\_\+data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{binary__file__io_8h_a39912bfe2a55f30e269196f9141d845d}{BUFFSIZE}}~(1 $<$$<$ 23)
+\item 
+\#define \mbox{\hyperlink{binary__file__io_8h_afc72357309dc38503f194f7fefaad3b2}{DATACHUNK}}~(1 $<$$<$ 21)
+\item 
+\#define \mbox{\hyperlink{binary__file__io_8h_a3bc2f7122ad6cf85501b1a8c94ed54da}{READ\+\_\+\+NAME}}~\char`\"{}\$read\+\_\+binary\+\_\+file\char`\"{}
+\item 
+\#define \mbox{\hyperlink{binary__file__io_8h_a2a57e5da38d4d06f90b22f34462648d5}{WRITE\+\_\+\+NAME}}~\char`\"{}\$write\+\_\+binary\+\_\+file\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+PLI\+\_\+\+INT32 \mbox{\hyperlink{binary__file__io_8h_a261a8e84fbbc736ee2b2401148d00934}{binary\+\_\+end\+\_\+compile\+\_\+cb}} (p\+\_\+cb\+\_\+data data)
+\begin{DoxyCompactList}\small\item\em BINARY FILE END COMPILE CALLBACK. \end{DoxyCompactList}\item 
+PLI\+\_\+\+INT32 \mbox{\hyperlink{binary__file__io_8h_ad2130b25730e984b1c1a009ba2abf065}{binary\+\_\+end\+\_\+sim\+\_\+cb}} (p\+\_\+cb\+\_\+data data)
+\begin{DoxyCompactList}\small\item\em BINARY FILE END SIM CALLBACK. \end{DoxyCompactList}\item 
+PLI\+\_\+\+INT32 \mbox{\hyperlink{binary__file__io_8h_a679dbcd83437b65cccf21225e5e3742d}{binary\+\_\+sizetf}} (PLI\+\_\+\+BYTE8 $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Returns the size, in bits, of the function return type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions to write raw binary files properly in verilog. 
+
+\begin{DoxyAuthor}{Author}
+Jay Convertino(\href{mailto:johnathan.convertino.1@us.af.mil}{\texttt{ johnathan.\+convertino.\+1@us.\+af.\+mil}}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2023-\/20-\/1
+\end{DoxyDate}
+@\+LICENSE MIT Copyright 2023 Jay Convertino
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \char`\"{}\+AS IS\char`\"{}, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{binary__file__io_8h_a39912bfe2a55f30e269196f9141d845d}\label{binary__file__io_8h_a39912bfe2a55f30e269196f9141d845d}} 
+\index{binary\_file\_io.h@{binary\_file\_io.h}!BUFFSIZE@{BUFFSIZE}}
+\index{BUFFSIZE@{BUFFSIZE}!binary\_file\_io.h@{binary\_file\_io.h}}
+\doxysubsubsection{\texorpdfstring{BUFFSIZE}{BUFFSIZE}}
+{\footnotesize\ttfamily \#define BUFFSIZE~(1 $<$$<$ 23)}
+
+\mbox{\Hypertarget{binary__file__io_8h_afc72357309dc38503f194f7fefaad3b2}\label{binary__file__io_8h_afc72357309dc38503f194f7fefaad3b2}} 
+\index{binary\_file\_io.h@{binary\_file\_io.h}!DATACHUNK@{DATACHUNK}}
+\index{DATACHUNK@{DATACHUNK}!binary\_file\_io.h@{binary\_file\_io.h}}
+\doxysubsubsection{\texorpdfstring{DATACHUNK}{DATACHUNK}}
+{\footnotesize\ttfamily \#define DATACHUNK~(1 $<$$<$ 21)}
+
+\mbox{\Hypertarget{binary__file__io_8h_a3bc2f7122ad6cf85501b1a8c94ed54da}\label{binary__file__io_8h_a3bc2f7122ad6cf85501b1a8c94ed54da}} 
+\index{binary\_file\_io.h@{binary\_file\_io.h}!READ\_NAME@{READ\_NAME}}
+\index{READ\_NAME@{READ\_NAME}!binary\_file\_io.h@{binary\_file\_io.h}}
+\doxysubsubsection{\texorpdfstring{READ\_NAME}{READ\_NAME}}
+{\footnotesize\ttfamily \#define READ\+\_\+\+NAME~\char`\"{}\$read\+\_\+binary\+\_\+file\char`\"{}}
+
+\mbox{\Hypertarget{binary__file__io_8h_a2a57e5da38d4d06f90b22f34462648d5}\label{binary__file__io_8h_a2a57e5da38d4d06f90b22f34462648d5}} 
+\index{binary\_file\_io.h@{binary\_file\_io.h}!WRITE\_NAME@{WRITE\_NAME}}
+\index{WRITE\_NAME@{WRITE\_NAME}!binary\_file\_io.h@{binary\_file\_io.h}}
+\doxysubsubsection{\texorpdfstring{WRITE\_NAME}{WRITE\_NAME}}
+{\footnotesize\ttfamily \#define WRITE\+\_\+\+NAME~\char`\"{}\$write\+\_\+binary\+\_\+file\char`\"{}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{binary__file__io_8h_a261a8e84fbbc736ee2b2401148d00934}\label{binary__file__io_8h_a261a8e84fbbc736ee2b2401148d00934}} 
+\index{binary\_file\_io.h@{binary\_file\_io.h}!binary\_end\_compile\_cb@{binary\_end\_compile\_cb}}
+\index{binary\_end\_compile\_cb@{binary\_end\_compile\_cb}!binary\_file\_io.h@{binary\_file\_io.h}}
+\doxysubsubsection{\texorpdfstring{binary\_end\_compile\_cb()}{binary\_end\_compile\_cb()}}
+{\footnotesize\ttfamily PLI\+\_\+\+INT32 binary\+\_\+end\+\_\+compile\+\_\+cb (\begin{DoxyParamCaption}\item[{p\+\_\+cb\+\_\+data}]{data }\end{DoxyParamCaption})}
+
+
+
+BINARY FILE END COMPILE CALLBACK. 
+
+\mbox{\Hypertarget{binary__file__io_8h_ad2130b25730e984b1c1a009ba2abf065}\label{binary__file__io_8h_ad2130b25730e984b1c1a009ba2abf065}} 
+\index{binary\_file\_io.h@{binary\_file\_io.h}!binary\_end\_sim\_cb@{binary\_end\_sim\_cb}}
+\index{binary\_end\_sim\_cb@{binary\_end\_sim\_cb}!binary\_file\_io.h@{binary\_file\_io.h}}
+\doxysubsubsection{\texorpdfstring{binary\_end\_sim\_cb()}{binary\_end\_sim\_cb()}}
+{\footnotesize\ttfamily PLI\+\_\+\+INT32 binary\+\_\+end\+\_\+sim\+\_\+cb (\begin{DoxyParamCaption}\item[{p\+\_\+cb\+\_\+data}]{data }\end{DoxyParamCaption})}
+
+
+
+BINARY FILE END SIM CALLBACK. 
+
+\mbox{\Hypertarget{binary__file__io_8h_a679dbcd83437b65cccf21225e5e3742d}\label{binary__file__io_8h_a679dbcd83437b65cccf21225e5e3742d}} 
+\index{binary\_file\_io.h@{binary\_file\_io.h}!binary\_sizetf@{binary\_sizetf}}
+\index{binary\_sizetf@{binary\_sizetf}!binary\_file\_io.h@{binary\_file\_io.h}}
+\doxysubsubsection{\texorpdfstring{binary\_sizetf()}{binary\_sizetf()}}
+{\footnotesize\ttfamily PLI\+\_\+\+INT32 binary\+\_\+sizetf (\begin{DoxyParamCaption}\item[{PLI\+\_\+\+BYTE8 $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Returns the size, in bits, of the function return type. 
+

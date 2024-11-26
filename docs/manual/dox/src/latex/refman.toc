@@ -1,0 +1,58 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Data Structure Documentation}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}s\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}process\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}data Struct Reference}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Field Documentation}{1}{subsection.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1.1}arg2\_handle}{1}{subsubsection.1.1.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1.2}array\_byte\_size}{1}{subsubsection.1.1.1.2}%
+\contentsline {subsubsection}{\numberline {1.1.1.3}error}{2}{subsubsection.1.1.1.3}%
+\contentsline {subsubsection}{\numberline {1.1.1.4}num\_ab\_val\_pairs}{2}{subsubsection.1.1.1.4}%
+\contentsline {subsubsection}{\numberline {1.1.1.5}p\_file}{2}{subsubsection.1.1.1.5}%
+\contentsline {subsubsection}{\numberline {1.1.1.6}p\_file\_name}{2}{subsubsection.1.1.1.6}%
+\contentsline {subsubsection}{\numberline {1.1.1.7}p\_ringbuffer}{2}{subsubsection.1.1.1.7}%
+\contentsline {subsubsection}{\numberline {1.1.1.8}systf\_handle}{2}{subsubsection.1.1.1.8}%
+\contentsline {subsubsection}{\numberline {1.1.1.9}thread}{2}{subsubsection.1.1.1.9}%
+\contentsline {chapter}{\numberline {2}File Documentation}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}binary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}file\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}io.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c File Reference}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Function Documentation}{4}{subsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}binary\_compiletf()}{4}{subsubsection.2.1.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}binary\_end\_compile\_cb()}{4}{subsubsection.2.1.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.1.3}binary\_end\_sim\_cb()}{4}{subsubsection.2.1.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.1.4}binary\_sizetf()}{4}{subsubsection.2.1.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.1.5}read\_binary\_reg\_systf()}{5}{subsubsection.2.1.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.1.6}write\_binary\_reg\_systf()}{5}{subsubsection.2.1.1.6}%
+\contentsline {subsection}{\numberline {2.1.2}Variable Documentation}{5}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}vlog\_startup\_routines}{5}{subsubsection.2.1.2.1}%
+\contentsline {section}{\numberline {2.2}binary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}file\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}io.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Detailed Description}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Macro Definition Documentation}{7}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}BUFFSIZE}{7}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}DATACHUNK}{7}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}READ\_NAME}{7}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}WRITE\_NAME}{7}{subsubsection.2.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.3}Function Documentation}{8}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}binary\_end\_compile\_cb()}{8}{subsubsection.2.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.2.3.2}binary\_end\_sim\_cb()}{8}{subsubsection.2.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.2.3.3}binary\_sizetf()}{8}{subsubsection.2.2.3.3}%
+\contentsline {section}{\numberline {2.3}read\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}binary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}file.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c File Reference}{8}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Detailed Description}{9}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Function Documentation}{9}{subsection.2.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.1}read\_binary\_calltf()}{9}{subsubsection.2.3.2.1}%
+\contentsline {subsubsection}{\numberline {2.3.2.2}read\_binary\_start\_sim\_cb()}{10}{subsubsection.2.3.2.2}%
+\contentsline {subsubsection}{\numberline {2.3.2.3}read\_thread()}{10}{subsubsection.2.3.2.3}%
+\contentsline {section}{\numberline {2.4}read\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}binary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}file.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{10}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Detailed Description}{11}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Function Documentation}{11}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}read\_binary\_calltf()}{11}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.4.2.2}read\_binary\_start\_sim\_cb()}{12}{subsubsection.2.4.2.2}%
+\contentsline {section}{\numberline {2.5}write\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}binary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}file.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}c File Reference}{12}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Detailed Description}{12}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Function Documentation}{13}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}write\_binary\_calltf()}{13}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {2.5.2.2}write\_binary\_start\_sim\_cb()}{13}{subsubsection.2.5.2.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.3}write\_thread()}{13}{subsubsection.2.5.2.3}%
+\contentsline {section}{\numberline {2.6}write\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}binary\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}file.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{14}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Detailed Description}{14}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Function Documentation}{15}{subsection.2.6.2}%
+\contentsline {subsubsection}{\numberline {2.6.2.1}write\_binary\_calltf()}{15}{subsubsection.2.6.2.1}%
+\contentsline {subsubsection}{\numberline {2.6.2.2}write\_binary\_start\_sim\_cb()}{15}{subsubsection.2.6.2.2}%
+\contentsline {chapter}{Index}{17}{section*.20}%

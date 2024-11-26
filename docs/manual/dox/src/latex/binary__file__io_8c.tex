@@ -1,0 +1,118 @@
+\hypertarget{binary__file__io_8c}{}\doxysection{binary\+\_\+file\+\_\+io.\+c File Reference}
+\label{binary__file__io_8c}\index{binary\_file\_io.c@{binary\_file\_io.c}}
+{\ttfamily \#include \char`\"{}binary\+\_\+file\+\_\+io.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}read\+\_\+binary\+\_\+file.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}write\+\_\+binary\+\_\+file.\+h\char`\"{}}\newline
+Include dependency graph for binary\+\_\+file\+\_\+io.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{binary__file__io_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+PLI\+\_\+\+INT32 \mbox{\hyperlink{binary__file__io_8c_a261a8e84fbbc736ee2b2401148d00934}{binary\+\_\+end\+\_\+compile\+\_\+cb}} (p\+\_\+cb\+\_\+data data)
+\begin{DoxyCompactList}\small\item\em BINARY FILE END COMPILE CALLBACK. \end{DoxyCompactList}\item 
+PLI\+\_\+\+INT32 \mbox{\hyperlink{binary__file__io_8c_ad2130b25730e984b1c1a009ba2abf065}{binary\+\_\+end\+\_\+sim\+\_\+cb}} (p\+\_\+cb\+\_\+data data)
+\begin{DoxyCompactList}\small\item\em BINARY FILE END SIM CALLBACK. \end{DoxyCompactList}\item 
+PLI\+\_\+\+INT32 \mbox{\hyperlink{binary__file__io_8c_a679dbcd83437b65cccf21225e5e3742d}{binary\+\_\+sizetf}} (PLI\+\_\+\+BYTE8 $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Returns the size, in bits, of the function return type. \end{DoxyCompactList}\item 
+PLI\+\_\+\+INT32 \mbox{\hyperlink{binary__file__io_8c_a2623b650c0fc59cfeefdf2596338e04d}{binary\+\_\+compiletf}} (PLI\+\_\+\+BYTE8 $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Compile time call, check the arguments for validity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{binary__file__io_8c_a733eff2ad65f5d567213be0271005080}{read\+\_\+binary\+\_\+reg\+\_\+systf}} (void)
+\begin{DoxyCompactList}\small\item\em Setup read\+\_\+binary\+\_\+file function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{binary__file__io_8c_a9156a2061956aff0e3171bd8244ea9eb}{write\+\_\+binary\+\_\+reg\+\_\+systf}} (void)
+\begin{DoxyCompactList}\small\item\em Setup write\+\_\+binary\+\_\+file function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+void($\ast$ \mbox{\hyperlink{binary__file__io_8c_acb719825b471c3945f347d647d233b0c}{vlog\+\_\+startup\+\_\+routines}} \mbox{[}$\,$\mbox{]})(void)
+\begin{DoxyCompactList}\small\item\em register the new file functions \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{binary__file__io_8c_a2623b650c0fc59cfeefdf2596338e04d}\label{binary__file__io_8c_a2623b650c0fc59cfeefdf2596338e04d}} 
+\index{binary\_file\_io.c@{binary\_file\_io.c}!binary\_compiletf@{binary\_compiletf}}
+\index{binary\_compiletf@{binary\_compiletf}!binary\_file\_io.c@{binary\_file\_io.c}}
+\doxysubsubsection{\texorpdfstring{binary\_compiletf()}{binary\_compiletf()}}
+{\footnotesize\ttfamily PLI\+\_\+\+INT32 binary\+\_\+compiletf (\begin{DoxyParamCaption}\item[{PLI\+\_\+\+BYTE8 $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Compile time call, check the arguments for validity. 
+
+\mbox{\Hypertarget{binary__file__io_8c_a261a8e84fbbc736ee2b2401148d00934}\label{binary__file__io_8c_a261a8e84fbbc736ee2b2401148d00934}} 
+\index{binary\_file\_io.c@{binary\_file\_io.c}!binary\_end\_compile\_cb@{binary\_end\_compile\_cb}}
+\index{binary\_end\_compile\_cb@{binary\_end\_compile\_cb}!binary\_file\_io.c@{binary\_file\_io.c}}
+\doxysubsubsection{\texorpdfstring{binary\_end\_compile\_cb()}{binary\_end\_compile\_cb()}}
+{\footnotesize\ttfamily PLI\+\_\+\+INT32 binary\+\_\+end\+\_\+compile\+\_\+cb (\begin{DoxyParamCaption}\item[{p\+\_\+cb\+\_\+data}]{data }\end{DoxyParamCaption})}
+
+
+
+BINARY FILE END COMPILE CALLBACK. 
+
+\mbox{\Hypertarget{binary__file__io_8c_ad2130b25730e984b1c1a009ba2abf065}\label{binary__file__io_8c_ad2130b25730e984b1c1a009ba2abf065}} 
+\index{binary\_file\_io.c@{binary\_file\_io.c}!binary\_end\_sim\_cb@{binary\_end\_sim\_cb}}
+\index{binary\_end\_sim\_cb@{binary\_end\_sim\_cb}!binary\_file\_io.c@{binary\_file\_io.c}}
+\doxysubsubsection{\texorpdfstring{binary\_end\_sim\_cb()}{binary\_end\_sim\_cb()}}
+{\footnotesize\ttfamily PLI\+\_\+\+INT32 binary\+\_\+end\+\_\+sim\+\_\+cb (\begin{DoxyParamCaption}\item[{p\+\_\+cb\+\_\+data}]{data }\end{DoxyParamCaption})}
+
+
+
+BINARY FILE END SIM CALLBACK. 
+
+\mbox{\Hypertarget{binary__file__io_8c_a679dbcd83437b65cccf21225e5e3742d}\label{binary__file__io_8c_a679dbcd83437b65cccf21225e5e3742d}} 
+\index{binary\_file\_io.c@{binary\_file\_io.c}!binary\_sizetf@{binary\_sizetf}}
+\index{binary\_sizetf@{binary\_sizetf}!binary\_file\_io.c@{binary\_file\_io.c}}
+\doxysubsubsection{\texorpdfstring{binary\_sizetf()}{binary\_sizetf()}}
+{\footnotesize\ttfamily PLI\+\_\+\+INT32 binary\+\_\+sizetf (\begin{DoxyParamCaption}\item[{PLI\+\_\+\+BYTE8 $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Returns the size, in bits, of the function return type. 
+
+\mbox{\Hypertarget{binary__file__io_8c_a733eff2ad65f5d567213be0271005080}\label{binary__file__io_8c_a733eff2ad65f5d567213be0271005080}} 
+\index{binary\_file\_io.c@{binary\_file\_io.c}!read\_binary\_reg\_systf@{read\_binary\_reg\_systf}}
+\index{read\_binary\_reg\_systf@{read\_binary\_reg\_systf}!binary\_file\_io.c@{binary\_file\_io.c}}
+\doxysubsubsection{\texorpdfstring{read\_binary\_reg\_systf()}{read\_binary\_reg\_systf()}}
+{\footnotesize\ttfamily void read\+\_\+binary\+\_\+reg\+\_\+systf (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Setup read\+\_\+binary\+\_\+file function. 
+
+\mbox{\Hypertarget{binary__file__io_8c_a9156a2061956aff0e3171bd8244ea9eb}\label{binary__file__io_8c_a9156a2061956aff0e3171bd8244ea9eb}} 
+\index{binary\_file\_io.c@{binary\_file\_io.c}!write\_binary\_reg\_systf@{write\_binary\_reg\_systf}}
+\index{write\_binary\_reg\_systf@{write\_binary\_reg\_systf}!binary\_file\_io.c@{binary\_file\_io.c}}
+\doxysubsubsection{\texorpdfstring{write\_binary\_reg\_systf()}{write\_binary\_reg\_systf()}}
+{\footnotesize\ttfamily void write\+\_\+binary\+\_\+reg\+\_\+systf (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Setup write\+\_\+binary\+\_\+file function. 
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{binary__file__io_8c_acb719825b471c3945f347d647d233b0c}\label{binary__file__io_8c_acb719825b471c3945f347d647d233b0c}} 
+\index{binary\_file\_io.c@{binary\_file\_io.c}!vlog\_startup\_routines@{vlog\_startup\_routines}}
+\index{vlog\_startup\_routines@{vlog\_startup\_routines}!binary\_file\_io.c@{binary\_file\_io.c}}
+\doxysubsubsection{\texorpdfstring{vlog\_startup\_routines}{vlog\_startup\_routines}}
+{\footnotesize\ttfamily void($\ast$ vlog\+\_\+startup\+\_\+routines\mbox{[}$\,$\mbox{]})(void) (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{  \mbox{\hyperlink{binary__file__io_8c_a733eff2ad65f5d567213be0271005080}{read\_binary\_reg\_systf}},}
+\DoxyCodeLine{  \mbox{\hyperlink{binary__file__io_8c_a9156a2061956aff0e3171bd8244ea9eb}{write\_binary\_reg\_systf}},}
+\DoxyCodeLine{  0}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+register the new file functions 
+

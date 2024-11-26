@@ -1,0 +1,76 @@
+\hypertarget{write__binary__file_8c}{}\doxysection{write\+\_\+binary\+\_\+file.\+c File Reference}
+\label{write__binary__file_8c}\index{write\_binary\_file.c@{write\_binary\_file.c}}
+
+
+Functions to write raw binary files properly in verilog.  
+
+
+{\ttfamily \#include \char`\"{}binary\+\_\+file\+\_\+io.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}write\+\_\+binary\+\_\+file.\+h\char`\"{}}\newline
+Include dependency graph for write\+\_\+binary\+\_\+file.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{write__binary__file_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ \mbox{\hyperlink{write__binary__file_8c_a896c62b931fc5a81daff547f9c1e916e}{write\+\_\+thread}} (void $\ast$data)
+\begin{DoxyCompactList}\small\item\em WRITE BINARY FILE THREAD TO EMPTY RINGBUFFER. \end{DoxyCompactList}\item 
+PLI\+\_\+\+INT32 \mbox{\hyperlink{write__binary__file_8c_aac98921917b7673fda8d1eb5938463af}{write\+\_\+binary\+\_\+start\+\_\+sim\+\_\+cb}} (p\+\_\+cb\+\_\+data data)
+\begin{DoxyCompactList}\small\item\em WRITE BINARY FILE START SIM CALLBACK. \end{DoxyCompactList}\item 
+PLI\+\_\+\+INT32 \mbox{\hyperlink{write__binary__file_8c_aa6cd22534730bff2a7a6618a977fad69}{write\+\_\+binary\+\_\+calltf}} (PLI\+\_\+\+BYTE8 $\ast$user\+\_\+data)
+\begin{DoxyCompactList}\small\item\em Called by the simulator, each time it is requested. TODO. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Functions to write raw binary files properly in verilog. 
+
+\begin{DoxyAuthor}{Author}
+Jay Convertino(\href{mailto:johnathan.convertino.1@us.af.mil}{\texttt{ johnathan.\+convertino.\+1@us.\+af.\+mil}}) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2023-\/20-\/1
+\end{DoxyDate}
+@\+LICENSE MIT Copyright 2023 Jay Convertino
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED \char`\"{}\+AS IS\char`\"{}, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{write__binary__file_8c_aa6cd22534730bff2a7a6618a977fad69}\label{write__binary__file_8c_aa6cd22534730bff2a7a6618a977fad69}} 
+\index{write\_binary\_file.c@{write\_binary\_file.c}!write\_binary\_calltf@{write\_binary\_calltf}}
+\index{write\_binary\_calltf@{write\_binary\_calltf}!write\_binary\_file.c@{write\_binary\_file.c}}
+\doxysubsubsection{\texorpdfstring{write\_binary\_calltf()}{write\_binary\_calltf()}}
+{\footnotesize\ttfamily PLI\+\_\+\+INT32 write\+\_\+binary\+\_\+calltf (\begin{DoxyParamCaption}\item[{PLI\+\_\+\+BYTE8 $\ast$}]{user\+\_\+data }\end{DoxyParamCaption})}
+
+
+
+Called by the simulator, each time it is requested. TODO. 
+
+\mbox{\Hypertarget{write__binary__file_8c_aac98921917b7673fda8d1eb5938463af}\label{write__binary__file_8c_aac98921917b7673fda8d1eb5938463af}} 
+\index{write\_binary\_file.c@{write\_binary\_file.c}!write\_binary\_start\_sim\_cb@{write\_binary\_start\_sim\_cb}}
+\index{write\_binary\_start\_sim\_cb@{write\_binary\_start\_sim\_cb}!write\_binary\_file.c@{write\_binary\_file.c}}
+\doxysubsubsection{\texorpdfstring{write\_binary\_start\_sim\_cb()}{write\_binary\_start\_sim\_cb()}}
+{\footnotesize\ttfamily PLI\+\_\+\+INT32 write\+\_\+binary\+\_\+start\+\_\+sim\+\_\+cb (\begin{DoxyParamCaption}\item[{p\+\_\+cb\+\_\+data}]{data }\end{DoxyParamCaption})}
+
+
+
+WRITE BINARY FILE START SIM CALLBACK. 
+
+\mbox{\Hypertarget{write__binary__file_8c_a896c62b931fc5a81daff547f9c1e916e}\label{write__binary__file_8c_a896c62b931fc5a81daff547f9c1e916e}} 
+\index{write\_binary\_file.c@{write\_binary\_file.c}!write\_thread@{write\_thread}}
+\index{write\_thread@{write\_thread}!write\_binary\_file.c@{write\_binary\_file.c}}
+\doxysubsubsection{\texorpdfstring{write\_thread()}{write\_thread()}}
+{\footnotesize\ttfamily void$\ast$ write\+\_\+thread (\begin{DoxyParamCaption}\item[{void $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+WRITE BINARY FILE THREAD TO EMPTY RINGBUFFER. 
+

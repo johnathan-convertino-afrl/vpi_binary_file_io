@@ -1,0 +1,133 @@
+\begin{theindex}
+
+  \item {arg2\_handle}
+    \subitem {s\_process\_data}, \hyperpage{1}
+  \item {array\_byte\_size}
+    \subitem {s\_process\_data}, \hyperpage{1}
+
+  \indexspace
+
+  \item {binary\_compiletf}
+    \subitem {binary\_file\_io.c}, \hyperpage{4}
+  \item {binary\_end\_compile\_cb}
+    \subitem {binary\_file\_io.c}, \hyperpage{4}
+    \subitem {binary\_file\_io.h}, \hyperpage{8}
+  \item {binary\_end\_sim\_cb}
+    \subitem {binary\_file\_io.c}, \hyperpage{4}
+    \subitem {binary\_file\_io.h}, \hyperpage{8}
+  \item {binary\_file\_io.c}, \hyperpage{3}
+    \subitem {binary\_compiletf}, \hyperpage{4}
+    \subitem {binary\_end\_compile\_cb}, \hyperpage{4}
+    \subitem {binary\_end\_sim\_cb}, \hyperpage{4}
+    \subitem {binary\_sizetf}, \hyperpage{4}
+    \subitem {read\_binary\_reg\_systf}, \hyperpage{4}
+    \subitem {vlog\_startup\_routines}, \hyperpage{5}
+    \subitem {write\_binary\_reg\_systf}, \hyperpage{5}
+  \item {binary\_file\_io.h}, \hyperpage{5}
+    \subitem {binary\_end\_compile\_cb}, \hyperpage{8}
+    \subitem {binary\_end\_sim\_cb}, \hyperpage{8}
+    \subitem {binary\_sizetf}, \hyperpage{8}
+    \subitem {BUFFSIZE}, \hyperpage{7}
+    \subitem {DATACHUNK}, \hyperpage{7}
+    \subitem {READ\_NAME}, \hyperpage{7}
+    \subitem {WRITE\_NAME}, \hyperpage{7}
+  \item {binary\_sizetf}
+    \subitem {binary\_file\_io.c}, \hyperpage{4}
+    \subitem {binary\_file\_io.h}, \hyperpage{8}
+  \item {BUFFSIZE}
+    \subitem {binary\_file\_io.h}, \hyperpage{7}
+
+  \indexspace
+
+  \item {DATACHUNK}
+    \subitem {binary\_file\_io.h}, \hyperpage{7}
+
+  \indexspace
+
+  \item {error}
+    \subitem {s\_process\_data}, \hyperpage{1}
+
+  \indexspace
+
+  \item {num\_ab\_val\_pairs}
+    \subitem {s\_process\_data}, \hyperpage{2}
+
+  \indexspace
+
+  \item {p\_file}
+    \subitem {s\_process\_data}, \hyperpage{2}
+  \item {p\_file\_name}
+    \subitem {s\_process\_data}, \hyperpage{2}
+  \item {p\_ringbuffer}
+    \subitem {s\_process\_data}, \hyperpage{2}
+
+  \indexspace
+
+  \item {read\_binary\_calltf}
+    \subitem {read\_binary\_file.c}, \hyperpage{9}
+    \subitem {read\_binary\_file.h}, \hyperpage{11}
+  \item {read\_binary\_file.c}, \hyperpage{8}
+    \subitem {read\_binary\_calltf}, \hyperpage{9}
+    \subitem {read\_binary\_start\_sim\_cb}, \hyperpage{9}
+    \subitem {read\_thread}, \hyperpage{10}
+  \item {read\_binary\_file.h}, \hyperpage{10}
+    \subitem {read\_binary\_calltf}, \hyperpage{11}
+    \subitem {read\_binary\_start\_sim\_cb}, \hyperpage{11}
+  \item {read\_binary\_reg\_systf}
+    \subitem {binary\_file\_io.c}, \hyperpage{4}
+  \item {read\_binary\_start\_sim\_cb}
+    \subitem {read\_binary\_file.c}, \hyperpage{9}
+    \subitem {read\_binary\_file.h}, \hyperpage{11}
+  \item {READ\_NAME}
+    \subitem {binary\_file\_io.h}, \hyperpage{7}
+  \item {read\_thread}
+    \subitem {read\_binary\_file.c}, \hyperpage{10}
+
+  \indexspace
+
+  \item {s\_process\_data}, \hyperpage{1}
+    \subitem {arg2\_handle}, \hyperpage{1}
+    \subitem {array\_byte\_size}, \hyperpage{1}
+    \subitem {error}, \hyperpage{1}
+    \subitem {num\_ab\_val\_pairs}, \hyperpage{2}
+    \subitem {p\_file}, \hyperpage{2}
+    \subitem {p\_file\_name}, \hyperpage{2}
+    \subitem {p\_ringbuffer}, \hyperpage{2}
+    \subitem {systf\_handle}, \hyperpage{2}
+    \subitem {thread}, \hyperpage{2}
+  \item {systf\_handle}
+    \subitem {s\_process\_data}, \hyperpage{2}
+
+  \indexspace
+
+  \item {thread}
+    \subitem {s\_process\_data}, \hyperpage{2}
+
+  \indexspace
+
+  \item {vlog\_startup\_routines}
+    \subitem {binary\_file\_io.c}, \hyperpage{5}
+
+  \indexspace
+
+  \item {write\_binary\_calltf}
+    \subitem {write\_binary\_file.c}, \hyperpage{13}
+    \subitem {write\_binary\_file.h}, \hyperpage{15}
+  \item {write\_binary\_file.c}, \hyperpage{12}
+    \subitem {write\_binary\_calltf}, \hyperpage{13}
+    \subitem {write\_binary\_start\_sim\_cb}, \hyperpage{13}
+    \subitem {write\_thread}, \hyperpage{13}
+  \item {write\_binary\_file.h}, \hyperpage{14}
+    \subitem {write\_binary\_calltf}, \hyperpage{15}
+    \subitem {write\_binary\_start\_sim\_cb}, \hyperpage{15}
+  \item {write\_binary\_reg\_systf}
+    \subitem {binary\_file\_io.c}, \hyperpage{5}
+  \item {write\_binary\_start\_sim\_cb}
+    \subitem {write\_binary\_file.c}, \hyperpage{13}
+    \subitem {write\_binary\_file.h}, \hyperpage{15}
+  \item {WRITE\_NAME}
+    \subitem {binary\_file\_io.h}, \hyperpage{7}
+  \item {write\_thread}
+    \subitem {write\_binary\_file.c}, \hyperpage{13}
+
+\end{theindex}
